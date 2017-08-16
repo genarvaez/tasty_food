@@ -15,7 +15,7 @@ $.ajax({
   dataType: 'json',
   data: {
   	entity_id: ciudad,
-	entity_type: "city"	
+	entity_type: 'city'	
 },
 })
 .done(function(res) {
