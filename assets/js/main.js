@@ -35,7 +35,7 @@ $(".select-city").on("change", function(){
 		entity_type: "city",
 	  },
 	})
-	.done(function(res) {
+	.done(function(res){
 		console.log("success");
 		console.log(res.restaurants)
 		$(".restaurant-box").html("");
