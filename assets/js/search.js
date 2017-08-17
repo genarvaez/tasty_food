@@ -26,9 +26,11 @@ $(document).ready(function(){
       var localidad = e.restaurant.location.locality_verbose;
       var address = e.restaurant.location.address;
       var rating = e.restaurant.user_rating.rating_text;
+
       console.log(localidad);
       console.log(address);
       console.log(rating);
+      $(#contenedor).append('<div id="food" class=col s4>'+ '<img "src= img" >' + '<p>' + name +'</p>'+'<p>' + localidad +'</p>'+ '</div>');
     });
   })
 
