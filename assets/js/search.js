@@ -25,12 +25,12 @@ $(document).ready(function(){
 
       var localidad = e.restaurant.location.locality_verbose;
       var address = e.restaurant.location.address;
-      var rating = e.restaurant.user_rating.rating_text;
+      var rating = e.restaurant.user_rating.aggregate_rating;
 
       console.log(localidad);
       console.log(address);
       console.log(rating);
-      $(#contenedor).append('<div id="food" class=col s4>'+ '<img "src= img" >' + '<p>' + name +'</p>'+'<p>' + localidad +'</p>'+ '</div>');
+      $(".info-rest").append("<div class='col s12 m12 info'><h4>" + name + "</h4><i class='small material-icons'>favorite_border</i><div class='direccion'><h5>Address</h5><p>"+address+ "</p></div><div class='precio'><h5>Price</h5><p>"+usd+ precio+ "</p></div><div class='rating'><h5>Rating</h5>"+ rating+"</div></div>")
     });
   })
 
