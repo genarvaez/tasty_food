@@ -7,4 +7,44 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	background: #FF8000;
+}
+.select-city{
+	font-size: 2em;
+}
+
+.restaurants{
+	padding: 20px;
+	.restaurant-box{
+		padding: 0;
+		height: 60vh;
+		overflow: scroll;
+
+		.img-box{
+			background: #FF8000;
+			border-radius: 10px;
+			border: 5px solid white;
+			padding: 0;
+			height: 28vh;
+			.info-rest{
+				color: white;
+				font-weight: bolder;
+				font-size: 1.4em;
+				.text-info{
+					text-align: right;
+					margin-top: 20px;
+					p, i{
+						font-size: 1em;
+						color: white;
+						font-weight: bolder;
+					}
+					
+				}
+			}
+		}
+	}
+}
+.more-information{
+	background: #FF8000;
+	color: white;
 }
