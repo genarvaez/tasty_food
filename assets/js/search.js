@@ -1,5 +1,5 @@
-/*$(document).ready(function(){
-  $.ajax({
+ $(document).ready(function(){
+ $.ajax({
     url: "https://developers.zomato.com/api/v2.1/search?entity_id=83&entity_type=city",
     beforeSend: function( req ) {
       req.setRequestHeader('user-key','dced529441fdc0169b85c82a8c296a5b');
@@ -20,17 +20,23 @@
       var rating = e.restaurant.user_rating.aggregate_rating;
 
       //Despliegue de info de cada restaurant al apretar la foto principal
-      //$(".responsive-img").on("click", function(){
-      $(".info-rest").append("<div class='col s12 m12 info'><h4>" + name + "</h4><i class='small material-icons'>favorite_border</i><div class='direccion'><h5>Address</h5><p>"+address+ "</p></div><div class='precio'><h5>Price</h5><p>"+usd+ precio+ "</p></div><div class='rating'><h5>Rating</h5>"+ rating+"</div></div>")
+      $(".restaurant-box").on("click", function(){
+      $(".info-rest").append("<div class='col s12 m12 info'><h4>" + name + "</h4><i class='small material-icons'>favorite_border</i><div class='direccion'><h5>Address</h5><p>"+address+ "</p></div><div class='precio'><h5>Price</h5><p>"+usd+ precio+ "</p></div><div class='rating'><h5>Rating</h5>"+ rating+"</div></div>");
+      $('.info-rest').show();
+
+      $('.info-rest').click(function(){
+      $('.info').remove();
+      $('.info-rest').hide();
+    })
     });
 
-$(".historial").click(function(){
+/*$(".historial").click(function(){
         $(".send").empty();
         $(".actual-profile").attr('src', $(this).children('div').children("img").attr("src"));
         console.log($(this).children('div').children(".bold").text())
         $(".actual-nick").html($(this).children('div').children(".bold").text())
         $("span").html(miHora());
-    })
+    })*/
 
       //Comparación dos restaurants
       $(".small").on("click", function(){
@@ -43,6 +49,5 @@ $(".historial").click(function(){
     console.log("error");
   })
   
-});*/
-
+});
 
