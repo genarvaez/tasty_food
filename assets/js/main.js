@@ -49,11 +49,9 @@ $(".select-city").on("change", function(){
 				"' class='responsive-img'><div class='row info-rest'><div class='col s5 m5 '><p>"+element.restaurant.name+
 				"</p></div><div class='col s7 m7 text-info'><p>"+element.restaurant.location.locality+ "   <i class='small material-icons'>local_dining</i></p></div></div></div>")
 			}
-		})
-
-		$(".img-box").click(function(){
 			$(".more-information").show();
 		})
+
 		
 	})
 	.fail(function() {

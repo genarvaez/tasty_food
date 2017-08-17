@@ -8,10 +8,23 @@
 	justify-content: space-around;
 	align-items: center;
 	background: #FF8000;
+	li{	
+		h5{
+			font-size: 3em;
+			font-weight: bolder;
+		}
+		a{
+			i{
+				font-size: 3em;
+				font-weight: bolder;
+			}
+		}
+	}
 }
 .select-city{
-	font-size: 2em;
+	font-size: 3em;
 }
+
 
 .restaurants{
 	padding: 20px;
