@@ -20253,6 +20253,8 @@ if (jQuery) {
   };
 })(jQuery);
 
+
+
 var data = [
 {
   "results_found": 1281774,
@@ -21203,7 +21205,50 @@ $(".select-city").on("change", function(){
 	})
 	
 
+
 })
+
+
+
+
+
+$(document).ready(function(){
+	$(".button-collapse").sideNav();
+});
+
+
+$(function(){
+	$("#profile_image").change(function(e){
+		var img = URL.createObjectURL(e.target.files[0]);
+		$(".responsive-img").attr("src",img);
+	})
+})
+
+if(localStorage.img) { 
+debugger;
+$('#bannerImg').attr('src', localStorage.img);
+}
+function readURL(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+
+    reader.onload = function(e) {
+    localStorage.setItem('img', e.target.result);
+      $('#bannerImg').attr('src', reader.result);
+    }
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+
+$(".file-upload").change(function() {
+  readURL(this);
+});
+
+$(".upload-button").on('click', function() {
+  $(".file-upload").click();
+});
+})
+
 
 
 

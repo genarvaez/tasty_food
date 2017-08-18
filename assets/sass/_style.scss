@@ -1,0 +1,77 @@
+*{
+	font-family: 'Roboto', sans-serif;
+}
+
+/*Inicio PRofile*/
+
+
+.nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: #FF8000;
+	li{	
+		h5{
+			font-size: 3em;
+			font-weight: bolder;
+		}
+		a{
+			i{
+				font-size: 3em;
+				font-weight: bolder;
+			}
+		}
+	}
+}
+.profile{
+
+	.photo{
+
+		height: 400px;
+		width: 100%;
+		background-color: white;
+		display: flex;
+		justify-content: center;        
+
+		}.rectangulo{
+			margin: 0;
+			padding: 0;
+
+		}
+		.btn{
+			width: 100%;
+			background-color: orange;
+
+		}
+		}.btn:hover {
+			background-color: orange;
+
+			}
+		.datos{
+				background-color: gray;
+				height: 200px;
+				width: 100%;
+
+				}
+		input#name, input#email{
+					background-color: white;
+					border-bottom: 0%;
+					margin-bottom: 0%;
+
+					}
+		#deletebottom{
+		margin-bottom: 0%;
+		}
+
+		 h4{
+		background-color: transparent;
+		padding-top: 5%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		}
+
+		div.file-field.input-field{
+		margin: 0;
+	}
+/* Fin PROFILE */
