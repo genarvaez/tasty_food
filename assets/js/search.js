@@ -1,4 +1,5 @@
- $(document).ready(function(){
+ /*$(document).ready(function(){
+  var json="";
  $.ajax({
     url: "https://developers.zomato.com/api/v2.1/search?entity_id=83&entity_type=city",
     beforeSend: function( req ) {
@@ -9,7 +10,12 @@
   })
 
   .done(function(response){
-    response.restaurants.forEach(function(e){
+    json= response.restaurants;
+    console.log(json);
+
+
+
+    json.forEach(function(e){
       var precio = e.restaurant.average_cost_for_two;
       var name = e.restaurant.name;
       var usd = e.restaurant.currency;
@@ -39,7 +45,7 @@
     })*/
 
       //Comparación dos restaurants
-      $(".small").on("click", function(){
+     /* $(".small").on("click", function(){
       $(".info-rest").append("<div class='col s4 m4 comp'><h5>Cuisine</h5><h5>Cost for two</h5><h5>Rate</h5></div><div class='col s4 m4 res1'><h4>"+ name+ "</h4><p>"+cocina+ "</p><p>"+usd+ precio+"</p><p>"+rating+ "</p></div><div class='col s4 m4 res2'><h4>"+name+"</h4><p>"+cocina+ "</p><p>"+usd+ precio+"</p><p>"+rating+ "</p></div")
       });
 });
@@ -48,6 +54,5 @@
   .fail(function(error){
     console.log("error");
   })
-  
-});
+  */
 
