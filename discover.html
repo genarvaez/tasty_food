@@ -12,49 +12,44 @@
 	    <div class="background">
 	      <img src="images/office.jpg">
 	    </div>
-	    <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+	    <a href="#!user"><img class="responsive-img" src="dist/img/noUsuario.jpg"></a>
 	    <a href="#!name"><span class="white-text name">John Doe</span></a>
 	    <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
 	  </div></li>
-	  <li><a href="#!">SEARCH</a></li>
-	  <li><a href="#!">DISCOVER</a></li>
+	  <li><a href="perfil.html">My Profile</a></li>
+	  <li><a href="search.html">SEARCH</a></li>
 	  <li><div class="divider"></div></li>
-	  <li><a class="subheader">Subheader</a></li>
-	  <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
 	</ul>
 	<nav>
 		<ul class="nav-bar">
 			<li><a href="#"><i class="large material-icons">arrow_back</i></a></li>
-			<li><h5>SEARCH</h5></li>
+			<li><h5>DISCOVER</h5></li>
 			<li><a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a></li>
 		</ul>
 	</nav>
-	<section class="search-input">
+<!--COMIENZA SECCION DISCOVER J-->
+	<section class="container-fluid contenedor-restaurantes">
 		<div class="row">
-			<div class="input-field col s12">
-			   <select class="select-city">
-			     <option value="0" disabled selected>City</option>
-			     <option value="1">Santiago</option>
-			     <option value="2">Roma</option>
-			     <option value="3">New York</option>
-			     <option value="4">Sao Paulo</option>
-			     <option value="5">Dublin</option>
-			     <option value="6">Rio de Janeiro</option>
-			   </select>
-			 </div>
-		</div>
-	</section>
-	<section class="restaurants">
-		<div class="row restaurant-box"></div>
-	</section>
-	<section class="more-information">
-		<div class="row center">
-			<div class="col s12 m12">
-				<h4>Click on restaurants for more information</h4>
+			<div class="col s10 m10 l10 xl10">
+				<select class="browser-default j-select">
+					<option value="" disabled selected>City</option>
+					<option value="83">Santiago</option>
+					<option value="73">Rio de Janeiro</option>
+					<option value="67">Sao Paulo</option>
+					<option value="257">Roma</option>
+					<option value="280">New York</option>
+					<option value="97">Dublin</option>
+				</select>
 			</div>
 		</div>
 	</section>
+	<section class="container">
+    	<div id="map"></div>
+	</section>
 
+	<div class="mi-div"></div>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXRIDDiVTRWxvRiXUV_TCtz_WXbCJ8Ixs&callback=initMap"></script>
+	<!-- TERMINA SECCION DISCOVER J -->
      <script src="dist/js/script.js"></script>   
 </body>
 </html>

@@ -1,7 +1,8 @@
 *{
 	padding: 0;
 	margin: 0;
-	box-sizing: border-box
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
 }
 .nav-bar{
 	display: flex;
@@ -61,3 +62,210 @@
 	background: #FF8000;
 	color: white;
 }
+/**********welcome estilos*************************************/
+body{
+    padding: 0;
+    margin: 0;
+    .img-welcome{
+        width: 100%;
+        height: 200vh;
+        z-index: -1;
+        position: fixed;
+    }
+    #welcome-section{
+        height: 100vh;
+        background-position: center;
+        background-image: url("../img/table.jpg");
+        .columna-cont{
+            .title-welcome{
+                font-family: 'Teko', sans-serif;
+                font-weight: 900;
+                font-size: 45px;
+                margin: 0 auto;
+                padding-top: 40%;
+            }
+            .first-button-welcome{
+                width: 80%;
+                margin-left: 10%;
+                margin-top: 40%;
+                border-radius: 7px;
+            }
+            .second-button-welcome{
+                width: 80%;
+                margin-left: 10%;
+                border-radius: 7px;
+                margin-top: 5%;
+            }
+            .link-dont-have{
+                margin-left: 22%;
+            }
+        }
+    }
+}
+/***************FIN WELCOME ESTILOS*****/
+
+/***********************SIGN UP*****************/
+.nav-signUp{
+	height: 39px;
+	.button-back-page{
+		height: auto;
+		padding-left: 20px;
+		.icon-back-page{
+			font-size: x-large;
+		}
+	}
+	.name-page-nav{
+	    position: relative;
+	    left: 30%;			
+	}
+	.buttom-enlaces-nav{	
+		margin-left: 60%;
+		.icon-enlaces-nav{
+			font-size: x-large;
+		}
+	}
+}
+#cuenta-section{
+	height: 100vh;
+	.first-column-cuenta{
+		.title-cuenta{
+			font-family: 'Teko', sans-serif;
+			font-weight: 900;
+			font-size: -webkit-xxx-large;
+			color: #ef6c00 !important;
+			margin-top: 20%;
+			margin-bottom: 0;
+		}
+		.subtitle-cuenta{
+			margin-top: 0;
+			font-size: x-small;
+		}
+		#btn-crear{
+			border: none;
+			border-radius: 5px;
+			width: 100%;
+			padding: 10px;
+			font-size: 12px;
+		}
+		input{
+			border: 1px solid #d1d1d1;
+			border-radius: 2px;
+		}
+		#name{
+			margin-top: 15%;
+		}
+	}
+}
+.errores{
+   	background: red;
+    color: #fff;
+    display: none;
+    font-size: 14px;
+    margin-top: -22px;
+    margin-left: 150px;
+    padding: 1px;
+    position: absolute;
+    width: 50%;
+}
+/***************seccion discover************/
+
+.contenedor {
+	background-color: #FF8000;
+	height: auto;
+	h4 {
+		font-weight: 700;
+	}
+	i {
+		padding: 5%;
+	}
+	.j-row {
+		margin-bottom: 0;
+	}
+}
+
+.contenedor-restaurantes {
+	background-color: #eaeaea;
+	height: auto;
+
+	.j-select {
+		margin: 5% 10%;
+	}
+}
+
+#map {
+	height: 400px;
+	width: 100%;
+}
+/*TERMINA SECCION DISCOVER J*/
+/***********************PERFIL SECCION**********/
+
+.nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: #FF8000;
+	li{	
+		h5{
+			font-size: 3em;
+			font-weight: bolder;
+		}
+		a{
+			i{
+				font-size: 3em;
+				font-weight: bolder;
+			}
+		}
+	}
+}
+.profile{
+
+	.photo{
+
+		height: 400px;
+		width: 100%;
+		background-color: white;
+		display: flex;
+		justify-content: center;        
+
+		}.rectangulo{
+			margin: 0;
+			padding: 0;
+
+		}
+		.btn{
+			width: 100%;
+			background-color: orange;
+
+		}
+		}.btn:hover {
+			background-color: orange;
+
+			}
+		.datos{
+				background-color: gray;
+				height: 200px;
+				width: 100%;
+
+				}
+		input#name, input#email{
+					background-color: white;
+					border-bottom: 0%;
+					margin-bottom: 0%;
+
+					}
+		#deletebottom{
+		margin-bottom: 0%;
+		}
+
+		 h4{
+		background-color: transparent;
+		padding-top: 5%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		}
+
+		div.file-field.input-field{
+		margin: 0;
+	}
+/* Fin PROFILE */
