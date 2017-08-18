@@ -1,0 +1,34 @@
+/* COMIENZA SECCION DISCOVER J*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.contenedor {
+	background-color: $background-color_nav;
+	height: auto;
+	h4 {
+		font-weight: 700;
+	}
+	i {
+		padding: 5%;
+	}
+	.j-row {
+		margin-bottom: 0;
+	}
+}
+
+.contenedor-restaurantes {
+	background-color: #eaeaea;
+	height: auto;
+
+	.j-select {
+		margin: 5% 10%;
+	}
+}
+
+#map {
+	height: 400px;
+	width: 100%;
+}
+/*TERMINA SECCION DISCOVER J*/
