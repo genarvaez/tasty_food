@@ -29,32 +29,42 @@
 			<li><a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a></li>
 		</ul>
 	</nav>
-	<section class="search-input">
+<!--COMIENZA SECCION DISCOVER J-->
+	<section class="container-fluid contenedor">
+		<div class="row j-row">
+			<div class="col s4 m4 l4 xl4">
+				<i class="white-text left material-icons">keyboard_backspace</i>
+			</div>
+			<div class="col s4 m4 l4 xl4">
+				<h4 class="white-text center">DISCOVER</h4>
+			</div>
+			<div class="col s4 m4 l4 xl4">
+				<i class="white-text right material-icons">keyboard_arrow_left</i>
+			</div>
+		</div>	
+	</section>
+	<section class="container-fluid contenedor-restaurantes">
 		<div class="row">
-			<div class="input-field col s12">
-			   <select class="select-city">
-			     <option value="0" disabled selected>City</option>
-			     <option value="1">Santiago</option>
-			     <option value="2">Roma</option>
-			     <option value="3">New York</option>
-			     <option value="4">Sao Paulo</option>
-			     <option value="5">Dublin</option>
-			     <option value="6">Rio de Janeiro</option>
-			   </select>
-			 </div>
-		</div>
-	</section>
-	<section class="restaurants">
-		<div class="row restaurant-box"></div>
-	</section>
-	<section class="more-information">
-		<div class="row center">
-			<div class="col s12 m12">
-				<h4>Click on restaurants for more information</h4>
+			<div class="col s10 m10 l10 xl10">
+				<select class="browser-default j-select">
+					<option value="" disabled selected>City</option>
+					<option value="83">Santiago</option>
+					<option value="73">Rio de Janeiro</option>
+					<option value="67">Sao Paulo</option>
+					<option value="257">Roma</option>
+					<option value="280">New York</option>
+					<option value="97">Dublin</option>
+				</select>
 			</div>
 		</div>
 	</section>
+	<section class="container">
+    	<div id="map"></div>
+	</section>
 
+	<div class="mi-div"></div>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXRIDDiVTRWxvRiXUV_TCtz_WXbCJ8Ixs&callback=initMap"></script>
+	<!-- TERMINA SECCION DISCOVER J -->
      <script src="dist/js/script.js"></script>   
 </body>
 </html>
