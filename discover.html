@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Discover</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 <body>
@@ -45,7 +46,25 @@
 		</div>
 	</section>
 	<section class="restaurants">
-		<div class="row restaurant-box"></div>
+		<div class="input-field col s12 filter-input">
+		  <select class="filter-select">
+		  	<option value="" disabled selected></option>
+		    <option value="1">By photo first</option>
+		    <option value="2">By rating</option>
+		    <option value="3">By Cost</option>
+		  </select>
+		  <label><i class="fa fa-filter" aria-hidden="true"></i></label>
+		</div>
+		<div class="row restaurant-box">
+			<div class="load-wrapp center">
+			    <div class="load-3">
+			        <p>Loading</p>
+			        <div class="line"></div>
+			        <div class="line"></div>
+			        <div class="line"></div>
+			    </div>
+			</div>
+		</div>
 	</section>
 	<section class="more-information">
 		<div class="row center">

@@ -1,14 +1,19 @@
 $('select').material_select();
  $(".button-collapse").sideNav();
- $(".more-information").hide();
+ $(".more-information, .filter-input, .load-wrapp").hide();
 var ciudad;
-$(".select-city").on("change", function(){
+var sort;
+
+
+$(".select-city, .filter-select").on("change", function(){
 
 	if($(this).val() == 1){
 		ciudad = 83
+		sort = "rating";
 	}
 	else if($(this).val() == 2){
 		ciudad = 257
+		sort = "cost";
 	}
 	else if($(this).val() == 3){
 		ciudad = 280
@@ -27,18 +32,23 @@ $(".select-city").on("change", function(){
 	  url: "https://developers.zomato.com/api/v2.1/search",
 	  beforeSend: function( req ) {
 	    req.setRequestHeader("user-key", "dced529441fdc0169b85c82a8c296a5b");
+	    $('.load-wrapp').show()
 	  },
 	  type: "GET",
 	  dataType: 'json',
 	  data: {
 	  	entity_id: ciudad,
 		entity_type: "city",
+		sort: sort,
+		order: "asc"
 	  },
 	})
 	.done(function(res){
 		console.log("success");
 		console.log(res.restaurants)
+
 		$(".restaurant-box").html("");
+
 		res.restaurants.forEach(function(element, i){
 			if(element.restaurant.featured_image == ""|| (element.restaurant.featured_image).substr(-3) != "jpg"){
 				$(".restaurant-box").append("<div class='col s4 m4 img-box'><img src='../dist/img/imagen-no-disponible.gif' class='responsive-img'><div class='row info-rest'><div class='col s6 m6 '><p>"+element.restaurant.name+
@@ -49,8 +59,9 @@ $(".select-city").on("change", function(){
 				"' class='responsive-img'><div class='row info-rest'><div class='col s5 m5 '><p>"+element.restaurant.name+
 				"</p></div><div class='col s7 m7 text-info'><p>"+element.restaurant.location.locality+ "   <i class='small material-icons'>local_dining</i></p></div></div></div>")
 			}
-			$(".more-information").show();
+			$(".more-information, .filter-input").show();
 		})
+
 
 		
 	})
@@ -60,6 +71,8 @@ $(".select-city").on("change", function(){
 	
 
 })
+
+
 
 
 
