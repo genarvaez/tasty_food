@@ -4,6 +4,22 @@ $(document).ready(function(){
 });
 
 
+
+$("#btn-crear").click(function(e){
+
+  var nombre = $("#name").val();
+  var email = $("#email").val();
+  localStorage.setItem("nombreStorage", nombre);
+  localStorage.setItem("emailStorage", email);
+  var prueba1 = localStorage.getItem("nombreStorage");
+  var prueba2= localStorage.getItem("emailStorage");
+  $(".nombreUsuario").append(prueba1);
+  $(".emailUsuario").append(prueba2);
+
+})
+
+
+
 $(function(){
 	$("#profile_image").change(function(e){
 		var img = URL.createObjectURL(e.target.files[0]);
@@ -52,5 +68,4 @@ function handleFileSelect(evt) {
                             '" title="test"/>'].join('');
 
           document.getElementById('list').insertBefore(span, null);
-    
-    }
+}
